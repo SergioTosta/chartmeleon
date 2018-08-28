@@ -13,8 +13,8 @@
     function test() {
         var chartmeleon = new Chartmeleon();
 
-        colors = chartmeleon.getColorSet(4, 5, true);
-
+        colors = chartmeleon.getColorSet(3, 5, true);
+		console.log(colors);
         for (i = 0; i < colors.length; i++) {
             for (let j = 0; j < colors[i].length; j++) {
                 var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -45,6 +45,8 @@
 
             document.body.appendChild(svg);
         }
+		
+		 
     }
 </script>
 
